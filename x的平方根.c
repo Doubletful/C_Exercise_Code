@@ -1,4 +1,4 @@
-//方法一暴力解法
+//方法一：暴力解法
 int mySqrt(int x) {
   long long n = 1;
     while (n * n < x)
