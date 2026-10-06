@@ -1,5 +1,5 @@
+  //方法一暴力解法
 int mySqrt(int x) {
-  //方法一
   long long n = 1;
     while (n * n < x)
     {
