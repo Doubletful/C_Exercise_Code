@@ -9,3 +9,13 @@ int mySqrt(int x) {
     }
     return n * n == x ? n : n - 1;
 }
+
+//方法二：牛顿迭代法
+int mySqrt(int x) {
+    long long n = x;
+    while (n * n > x)
+    {
+        n = (n + x / n) / 2;
+    }
+    return n;
+}
