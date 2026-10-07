@@ -1,3 +1,5 @@
+//LeetCode    69.x的平方根
+
 //方法一：暴力解法
 int mySqrt(int x) {
     long long n = 1;
