@@ -1,6 +1,5 @@
 //LeetCode    367.有效的完全平方数
 
-/*
 //方法一：二分查找
 bool isPerfectSquare(int num) {
     int left = 0, right = num, ans = -1;
@@ -29,4 +28,3 @@ bool isPerfectSquare(int num) {
     }
     return num == 0;
 }
-*/
