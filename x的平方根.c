@@ -1,6 +1,6 @@
 //方法一：暴力解法
 int mySqrt(int x) {
-  long long n = 1;
+    long long n = 1;
     while (n * n < x)
     {
         n += 1;
