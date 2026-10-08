@@ -18,7 +18,7 @@ bool isPerfectSquare(int num) {
 
 //方法二：数学
 //数学知识：连续奇数之和等于平方数
-//公式：n*2 = 1 + 3 + 5 + ⋯ + (2n − 1)
+//公式：n**2 = 1 + 3 + 5 + ⋯ + (2n − 1)
 bool isPerfectSquare(int num) {
     int n = 1;
     while (num > 0)
