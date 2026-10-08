@@ -2,16 +2,16 @@
 
 //方法一：二分查找
 bool isPerfectSquare(int num) {
-    int left = 0, right = num;
-    while (left <= right)
+    int l = 1, r = num;
+    while (l <= r)
     {
-        long mid = left + (right - left) / 2;
-        if (mid * mid == num)
-            return true;
-        else if (mid * mid > num)
-            right = mid - 1;
+        long i = l + (r - l) / 2;
+        if (i * i == num)
+            return i;
+        else if (num / i < i)
+            r = i - 1;
         else
-            left = mid + 1;
+            l = i + 1;
     }
     return false;
 }
