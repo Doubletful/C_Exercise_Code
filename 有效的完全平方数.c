@@ -2,7 +2,7 @@
 
 //方法一：二分查找
 bool isPerfectSquare(int num) {
-    int left = 0, right = num, ans = -1;
+    int left = 0, right = num;
     while (left <= right)
     {
         long mid = left + (right - left) / 2;
