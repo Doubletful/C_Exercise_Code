@@ -12,3 +12,14 @@ int removeElement(int* nums, int numsSize, int val) {
 }
 
 //方法二：双指针优化
+int removeElement(int* nums, int numsSize, int val) {
+    int l = 0, r = numsSize - 1;
+    while (l <= r)
+    {
+        if (nums[l] == val)
+            nums[l] = nums[r--];
+        else
+            l++;
+    }
+    return l;
+}
