@@ -15,3 +15,16 @@ void moveZeroes(int* nums, int numsSize) {
 }
 
 //方法二：双指针交换元素
+void moveZeroes(int* nums, int numsSize) {
+    int i = 0;
+    for (int j = 0; j < numsSize; j++)
+    {
+        if (nums[j])
+        {
+            int tmp = nums[j];
+            nums[j] = nums[i];
+            nums[i] = tmp;
+            i++;
+        }
+    }
+}
