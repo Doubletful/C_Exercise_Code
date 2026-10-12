@@ -1,6 +1,6 @@
 //LeetCode    283.移动零
 
-//方法一：两次遍历
+//方法一：两次遍历填补零
 void moveZeroes(int* nums, int numsSize) {
     int i = 0;
     for (int j = 0; j < numsSize; j++)
@@ -14,4 +14,4 @@ void moveZeroes(int* nums, int numsSize) {
     }
 }
 
-//方法二：交换元素
+//方法二：双指针交换元素
