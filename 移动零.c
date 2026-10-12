@@ -13,3 +13,5 @@ void moveZeroes(int* nums, int numsSize) {
         nums[i++] = 0;
     }
 }
+
+//方法二：交换元素
