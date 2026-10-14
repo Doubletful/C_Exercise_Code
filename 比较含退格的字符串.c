@@ -2,26 +2,26 @@
 
 //方法一：双指针模拟
 bool backspaceCompare(char* s, char* t) {
-    int l1 = 0, l2 = 0;
-    for (int r = 0; s[r]; r++)
+    int s1 = 0, t1 = 0;
+    for (int i = 0; s[i]; i++)
     {
-        if (s[r] == '#')
+        if (s[i] == '#')
         {
-            if (l1) --l1;
+            if (s1) --s1;
         }
         else
-            s[l1++] = s[r];
+            s[s1++] = s[i];
     }
-    for (int r = 0; t[r]; r++)
+    for (int i = 0; t[i]; i++)
     {
-        if (t[r] == '#')
+        if (t[i] == '#')
         {
-            if (l2) --l2;
+            if (t1) --t1;
         }
         else
-            t[l2++] = t[r];
+            t[t1++] = t[i];
     }
-    s[l1] = '\0';
-    t[l2] = '\0';
+    s[s1] = '\0';
+    t[t1] = '\0';
     return !strcmp(s, t);
 }
