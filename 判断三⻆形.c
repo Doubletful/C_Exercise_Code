@@ -15,23 +15,15 @@ int main4()
 	scanf("%d%*c%d%*c%d", &a, &b, &c);
 	//判断是否构成三角形，两边之和大于第三边
 	if (a + b <= c || a + c <= b || b + c <= a)
-	{
 		printf("非三角形\n");
-	}
 	//判断等边三角形
 	else if (a == b && b == c)
-	{
 		printf("等边三角形\n");
-	}
 	//判断等腰三角形
 	else if (a == b || a == c || b == c)
-	{
 		printf("等腰三角形\n");
-	}
 	else
-	{
 		printf("普通三角形\n");
-	}
 
 	//方法二
 	int d = 0;
@@ -43,23 +35,15 @@ int main4()
 	{
 		//判断等边三角形
 	    if (d == e && e == f)
-	    {
 		printf("等边三角形\n");
-	    }
 	    //判断等腰三角形
 	    else if (d == e || d == f || e == f)
-	    {
 	    	printf("等腰三角形\n");
-	    }
 	    else
-	    {
 	    	printf("普通三角形\n");
-	    }
 	}
 	else
-	{
 		printf("非三角形\n");
-	}
 
 	return 0;
 }
