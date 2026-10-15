@@ -17,14 +17,10 @@ int main14()
 	{
 		//大写字母转小写字母
 		if (string[i] >= 'A' && string[i] <= 'Z')
-		{
 			string[i] += 32;
-		}
 		//小写字母转大写字母
-		else if (string[i] >= 'a' && string[i] <= 'z')
-		{
+		if (string[i] >= 'a' && string[i] <= 'z')
 			string[i] -= 32;
-		}
 	}
 	printf("%s\n", string);
 
@@ -38,16 +34,12 @@ int main14()
 	{
 		//isupper用于判断字符是否为⼤写字⺟
 		if (isupper(buf[i]))
-		{
 			//tolower用于将字符转换为⼩写字⺟
 			buf[i] = tolower(buf[i]);
-		}
 		//islower用于判断字符是否为⼩写字⺟
-		else if (islower(buf[i]))
-		{
+		if (islower(buf[i]))
 			//toupper用于将字符转换为⼤写字⺟
 			buf[i] = toupper(buf[i]);
-		}
 		i++;
 	}
 	printf("%s\n", buf);
