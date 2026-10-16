@@ -1,7 +1,7 @@
 ﻿#include <stdio.h>
 #include <math.h>
 
-int main3()
+int main()
 {
 	//题⽬描述：
 	//使⽤C语⾔写⼀个程序打印100~200之间的素数，数字中间使⽤空格分割
