@@ -1,7 +1,7 @@
 ﻿#include <stdio.h>
 #include <math.h>
 
-int main11()
+int main()
 {
 	//题⽬描述：
 	//写⼀个代码打印1~100000之间的所有的⾃幂数，中间⽤空格分隔。
