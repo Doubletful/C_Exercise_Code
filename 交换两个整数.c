@@ -9,7 +9,7 @@ void Swap(int* a, int* b)
 	*a = *a - *b;
 }
 
-int main15()
+int main()
 {
 	//题⽬描述：
 	//写⼀个函数Swap，可以交换两个整数的内容。注意必须实现成函数完成。
