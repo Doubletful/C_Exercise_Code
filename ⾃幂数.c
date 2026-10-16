@@ -23,7 +23,7 @@ int main11()
 		//计算i每一位数的i的位数幂的和
 		while (temp)
 		{
-			//使⽤pow函数求某个数的次⽅数
+			//使⽤pow函数求某个数的n次⽅数
 			sum += (int)pow(temp % 10, n);
 			temp /= 10;
 		}
