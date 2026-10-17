@@ -1,7 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main12()
+int main()
 {
 	//题⽬描述：
 	//输⼊⼀个整数n，使用*打印对应2 * n - 1⾏的菱形图案
