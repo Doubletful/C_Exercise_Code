@@ -1,7 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main9()
+int main()
 {
 	//题⽬描述：
 	//输⼊10个整数，然后使⽤冒泡排序对数组内容进⾏升序排序，然后打印数组的内容
