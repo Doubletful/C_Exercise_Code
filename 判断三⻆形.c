@@ -1,7 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main4()
+int main()
 {
 	//题⽬描述：
 	//输⼊三个整数a, b, c，判断由a, b, c作为三条边组成的三⻆形，如果不能组成三⻆形则输出：
