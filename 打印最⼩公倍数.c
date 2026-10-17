@@ -1,7 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main6()
+int main()
 {
 	//题⽬描述：
 	//输⼊2个整数m和n，计算m和n的最⼩公倍数，并打印出结果
