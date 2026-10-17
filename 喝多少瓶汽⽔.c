@@ -1,7 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main13()
+int main()
 {
 	//题⽬描述：
 	//已知1瓶汽⽔1元，2个空瓶能换1瓶汽⽔，输⼊一个整数n元钱(n >= 0)，计算能喝多少汽⽔
