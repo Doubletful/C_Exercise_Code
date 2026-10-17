@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main14()
+int main()
 {
 	//题⽬描述：
 	//输⼊⼀个字符串，将字符串中⼤写字⺟全部转为⼩写字⺟，⼩写字⺟转为⼤写字⺟，
