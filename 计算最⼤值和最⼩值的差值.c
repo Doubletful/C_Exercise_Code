@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <limits.h>
 
-int main8()
+int main()
 {
 	//题⽬描述:
 	//输⼊10个整数，写代码找出其中最⼤值和最⼩值，计算最⼤值和最⼩值的差，并打印出差值结果
