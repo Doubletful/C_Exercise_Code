@@ -1,6 +1,6 @@
 ﻿#include <stdio.h>
 
-int main2()
+int main()
 {
 	//题⽬描述：
 	//使⽤C语⾔写⼀个程序打印9 * 9乘法⼝诀表
