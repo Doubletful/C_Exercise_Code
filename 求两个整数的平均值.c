@@ -10,10 +10,9 @@ int average(int m, int n)
 	return m + (n - m) / 2;
 }
 
-int main16()
-{
-	//16. 求两个整数的平均值
-	//16.1 题⽬描述：
+int main()
+{ 
+	//题⽬描述：
 	//输⼊2个整数m和n，写⼀个函数average，求2个整数的平均值，考虑整数过⼤溢出的问题。
 
 	int m = 0;
