@@ -6,9 +6,7 @@ size_t Strlen(const char* p)
 {
 	//递到p指向\0
 	if (*p == '\0')
-	{
 		return 0;
-	}
 	//每次递入时都将p加1(递入字符串长度从头减1)
 	//每次递入时都记录p被加的次数(即为字符串长度)
 	return 1 + Strlen(p + 1);
