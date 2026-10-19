@@ -14,7 +14,7 @@ size_t Strlen(const char* p)
 	return 1 + Strlen(p + 1);
 }
 
-int main17()
+int main()
 {
 	//题⽬描述：
 	//写⼀个函数Strlen，可以求字符串⻓度，除了函数的形参，函数中不能使⽤多余的变量。
@@ -25,5 +25,4 @@ int main17()
 	printf("%zu\n", Strlen(string));
 	
 	return 0;
-
 }
