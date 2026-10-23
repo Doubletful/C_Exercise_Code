@@ -31,6 +31,4 @@ int main18()
 	printf("%s\n", reverse(string));
 
 	return 0;
-
 }
-
