@@ -21,7 +21,7 @@ char* reverse(char* p)
 	return p;
 }
 
-int main18()
+int main()
 {
 	//题⽬描述：
 	//输⼊⼀个字符串，写⼀个函数将⼀个字符串的内容逆序过来。
