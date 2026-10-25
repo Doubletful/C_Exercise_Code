@@ -20,20 +20,14 @@ int main()
 	{
 		//对应字符不同修改标志
 		if (*left != *right)
-		{
 			flag = 0;
-		}
 		left++;
 		right--;
 	}
 	if (flag)
-	{
 		printf("Yes\n");
-	}
 	else
-	{
 		printf("No\n");
-	}
-
+	
 	return 0;
 }
