@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main20()
+int main()
 {
 	//题⽬描述：
 	//输⼊⼀个字符串，判断这个字符串是否是回⽂字符串(字符串的⻓度⼩于等于30，
