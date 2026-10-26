@@ -16,18 +16,12 @@ int main()
 	{
 		//判断是否为闰年
 		if ((y % 4 == 0) && (y % 100 != 0) || (y % 400 == 0))
-		{
 			printf("%d\n", arr[m - 1] + 1);
-		}
 		else
-		{
 			printf("%d\n", arr[m - 1]);
-		}
 	}
 	else
-	{
 		printf("%d\n", arr[m - 1]);
-	}
 
 	return 0;
 }
