@@ -1,7 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main21()
+int main()
 {
 	//题⽬描述：
 	//输⼊y和m两个整数，y表⽰年份，m表⽰⽉份，计算y年m⽉有多少天，并输出天数。
