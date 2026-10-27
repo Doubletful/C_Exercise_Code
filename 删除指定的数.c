@@ -1,10 +1,9 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main22()
+int main()
 {
-	//23. 删除指定的数
-	//23.1 题⽬描述：
+	//题⽬描述：
 	//输⼊10个整数存放在数组中后输⼊⼀个整数n，删除数组中所有等于n的数字，打印剩余的数字。
 
 	////方法一
