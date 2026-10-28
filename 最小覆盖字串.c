@@ -1,6 +1,6 @@
 //LeetCode    76.最小覆盖字串
 
-//解法一：滑动窗口
+//方法一：滑动窗口，存储字母的个数和种类
 char* minWindow(char* s, char* t) {
     int cnt_t[128] = {0};
     int cnt_s[128] = {0};
@@ -9,7 +9,7 @@ char* minWindow(char* s, char* t) {
     {
         tcnt += cnt_t[t[i]]++ == 0;
     }
-    int l = 0, ans_l = -1, ans_r = INT_MAX / 2; // -1表未找到答案的标志,除2避免溢出
+    int l = 0, ans_l = -1, ans_r = INT_MAX / 2; // -1表未找到答案的标志，除2避免溢出
     for (int r = 0; s[r]; r++)
     {
         int ch1 = s[r];
@@ -41,7 +41,7 @@ char* minWindow(char* s, char* t) {
     return s + ans_l;
 }
 
-//解法二：滑动窗口
+//方法二：滑动窗口，只存储字母的个数
 bool is_satisfaction(int* cnt_s, int* cnt_t)
 {
     for (int i = 'A'; i <= 'Z'; i++)
