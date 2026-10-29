@@ -41,7 +41,7 @@ char* minWindow(char* s, char* t) {
     return s + ans_l;
 }
 
-//方法二：滑动窗口，只存储字母的个数
+//方法二：优化，只存储字母的个数
 bool is_satisfaction(int* cnt_s, int* cnt_t)
 {
     for (int i = 'A'; i <= 'Z'; i++)
