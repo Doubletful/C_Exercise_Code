@@ -1,6 +1,6 @@
 //LeetCode    88.合并两个有序数组
 
-//方法一
+//方法一：两次遍历
 void mergy(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n)
 {
 	 //目标数组有效数字的最后一个下标
@@ -27,7 +27,7 @@ void mergy(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n)
 	}
 }
 
-//方法二
+//方法二：一次遍历
 void merge(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n) {
 	sum = m + n - 1;
 	p1 = m - 1;
