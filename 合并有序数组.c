@@ -19,13 +19,9 @@ void mergy(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n)
 	while (p1 >= 0 && p2 >= 0)
 	{
 		if (nums1[p1] > nums2[p2])
-		{
 			nums1[sum--] = nums1[p1--];
-		}
 		else
-		{
 			nums1[sum--] = nums2[p2--];
-		}
 	}
 	//将未被完全拷贝的数组依次从后给目标数组赋值
 	//因为nums1为合并后的目标数组，当nums1未被完全拷贝时，目标数组中已存在nums1的未拷贝值，
@@ -49,20 +45,15 @@ void mergy(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n)
 		//比较对应值并依次从后给目标数组赋值其较大值
 		//当某一数组完成遍历时，代表该数组值的变量将比另一数组中未赋值的值都小
 		if (numA > numB)
-		{
 			nums1[sum--] = nums1[p1--];
-		}
 		else
-		{
 			nums1[sum--] = nums2[p2--];
-		}
 	}
 }
 
-int main23()
+int main()
 {
-	//25. 合并有序数组
-	//25.1 题⽬描述：
+	//题⽬描述：
 	//输⼊两个升序排列的序列，将两个序列合并为⼀个升序序列并输出。输⼊包含三⾏，
 	//第⼀⾏包含两个正整数n, m，⽤空格分隔。n表⽰第⼆⾏第⼀个升序序列中数字的个数，
 	//m表⽰第三⾏第⼆个升序序列中数字的个数。其中1 <= n <= 30, 1 <= m <= 30
@@ -83,9 +74,7 @@ int main23()
 	{
 		scanf("%d%*c%d", &n, &m);
 		if (1 <= n && n <= 30 && 1 <= m && m <= 30)
-		{
 			break;
-		}
 	}
 	for (int i = 0; i < n; i++)
 	{
@@ -106,14 +95,10 @@ int main23()
 	{
 		//比较arr1和arr2中的元素，先拷贝较小值
 		if (arr1[p1] < arr2[p2])
-		{
 			//拷贝并将拷贝到的数组指向的位置加1
 			arr3[i++] = arr1[p1++];
-		}
 		else
-		{
 			arr3[i++] = arr2[p2++];
-		}
 	}
 	//arr1中的元素已全部完成拷贝，拷贝arr2中未拷贝的较大值
 	if (p1 == n)
@@ -140,6 +125,5 @@ int main23()
 	printf("\n");
 
 	return 0;
-
 }
 
