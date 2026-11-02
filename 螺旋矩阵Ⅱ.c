@@ -34,7 +34,7 @@ int** generateMatrix(int n, int* returnSize, int** returnColumnSizes) {
     return nums;
 }
 
-//方法二：方向向量
+//方法二：方向向量模拟
 int** generateMatrix(int n, int* returnSize, int** returnColumnSizes) {
     int** nums = malloc(sizeof(int*) * n);
     *returnColumnSizes = malloc(sizeof(int*) *  n);
