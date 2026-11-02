@@ -1,4 +1,4 @@
-//LeetCOde    59.螺旋矩阵Ⅱ
+//LeetCode    59.螺旋矩阵Ⅱ
 
 //方法一：模拟
 int** generateMatrix(int n, int* returnSize, int** returnColumnSizes) {
