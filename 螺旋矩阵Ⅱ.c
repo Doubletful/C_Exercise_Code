@@ -34,7 +34,7 @@ int** generateMatrix(int n, int* returnSize, int** returnColumnSizes) {
     return nums;
 }
 
-//方法二：设定边界模拟
+//方法二：设定并缩小边界模拟
 int** generateMatrix(int n, int* returnSize, int** returnColumnSizes) {
     int** nums = malloc(sizeof(int*) * n);
     (*returnColumnSizes) = malloc(sizeof(int) * n);
