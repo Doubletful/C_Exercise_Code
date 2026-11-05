@@ -9,7 +9,8 @@ int main()
 	for (int i = 1; i <= 100000; i++)
 	{
 		//记录i的位数
-
+		int n = 0;
+		int temp = i;
 		//计算i的位数
 		while (temp)
 		{
