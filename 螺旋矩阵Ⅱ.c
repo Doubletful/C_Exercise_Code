@@ -74,25 +74,26 @@ int** generateMatrix(int n, int* returnSize, int** returnColumnSizes) {
 
 //方法三：向量控制模拟
 int** generateMatrix(int n, int* returnSize, int** returnColumnSizes) {
+    int** nums = malloc(sizeof(int*) * n);
     *returnSize = n;
-    *returnColumnSizes = malloc(n * sizeof(int));
-    int** ans = malloc(n * sizeof(int*));
-    for (int i = 0; i < n; i++) 
+    (*returnColumnSizes) = malloc(sizeof(int) * n);
+    for (int i = 0; i < n; i++)
     {
+        nums[i] = calloc(n, sizeof(int));
         (*returnColumnSizes)[i] = n;
-        ans[i] = calloc(n, sizeof(int));
     }
-    int DIRS[4][2] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-    int i = 0, j = 0, di = 0, cur = 1;
-    while (cur <= n * n)
+    int dx = 0, dy = 1, x = 0, y = 0;
+    for (int cur = 1; cur <= n * n; cur++)
     {
-        ans[i][j] = cur++;
-        int x = i + DIRS[di][0];
-        int y = j + DIRS[di][1];
-        if (x < 0 || y < 0 || x >= n || y >= n || ans[x][y])
-            di = (di + 1) % 4;
-        i += DIRS[di][0];
-        j += DIRS[di][1];
+        nums[x][y] = cur;
+        if (nums[(x + dx + n) % n][(y + dy + n) % n])
+        {
+            int tmp = dy;
+            dy = -dx;
+            dx = tmp;
+        }
+        x += dx;
+        y += dy;
     }
-    return ans;
+    return nums;
 }
