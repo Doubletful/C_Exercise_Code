@@ -45,27 +45,28 @@ int** generateMatrix(int n, int* returnSize, int** returnColumnSizes) {
     }
     *returnSize = n;
     int t = 0, l = 0, b = n - 1, r = n - 1;
-    int cur = 1;
+    nums[i][j] = 1;
+    int cur = 2;
     while (cur <= n * n)
     {
-        for (int i = l; i <= r; i++)
+        while (j < r)
         {
-            nums[t][i] = cur++;
+            nums[i][++j] = cur++;
         }
         t++;
-        for (int i = t; i <= b; i++)
+        while (i < b)
         {
-            nums[i][r] = cur++;
+            nums[++i][j] = cur++;
         }
         r--;
-        for (int i = r; i >= l; i--)
+        while (j > l)
         {
-            nums[b][i] = cur++;
+            nums[i][--j] = cur++;
         }
         b--;
-        for (int i = b; i >= t; i--)
+        while (i > t)
         {
-            nums[i][l] = cur++;
+            nums[--i][j] = cur++;
         }
         l++;
     }
