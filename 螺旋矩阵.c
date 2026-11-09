@@ -39,7 +39,7 @@ int* spiralOrder(int** matrix, int matrixSize, int* matrixColSize, int* returnSi
     return nums;
 }
 
-//方法二：方向向量
+//方法二：向量控制模拟
 int* spiralOrder(int** matrix, int matrixSize, int* matrixColSize, int* returnSize) {
     int m = matrixSize, n = matrixColSize[0];
     int* nums = malloc(sizeof(int) * m * n);
