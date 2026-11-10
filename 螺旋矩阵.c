@@ -50,9 +50,7 @@ int* spiralOrder(int** matrix, int matrixSize, int* matrixColSize, int* returnSi
     {
         nums[idx] = matrix[i][j];
         matrix[i][j] = INT_MAX;
-        int x = i + dx;
-        int y = j + dy;
-        if (x < 0 || y < 0 || x == m || y == n || matrix[x][y] == INT_MAX)
+        if (matrix[(i + dx + m) % m][(j + dy + n) % n] == INT_MAX)
         {
             int tmp = dy;
             dy = -dx;
