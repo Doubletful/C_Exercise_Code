@@ -61,3 +61,26 @@ int* spiralOrder(int** matrix, int matrixSize, int* matrixColSize, int* returnSi
     }
     return nums;
 }
+
+//方法三：向量控制
+int* spiralOrder(int** matrix, int matrixSize, int* matrixColSize, int* returnSize) {
+    int m = matrixSize, n = *matrixColSize;
+    int size = m * n;
+    int* nums = malloc(sizeof(int) * size);
+    *returnSize = 0;
+    int i = 0, j = -1;
+    int DIRS[4][2] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+    for (int id = 0; *returnSize < size; id = (id + 1) % 4)
+    {
+        for (int k = 0; k < n; k++)
+        {
+            i += DIRS[id][0];
+            j += DIRS[id][1];
+            nums[(*returnSize)++] = matrix[i][j];
+        }
+        int tmp = n;
+        n = m - 1;
+        m = tmp;
+    }
+    return nums;
+}
