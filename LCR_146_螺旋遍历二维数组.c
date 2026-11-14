@@ -1,4 +1,4 @@
-//LeetCode    LCR 146. 螺旋矩阵遍历二维数组
+//LeetCode    LCR 146.螺旋矩阵遍历二维数组
 
 //向量控制不加标记模拟
 int* spiralArray(int** array, int arraySize, int* arrayColSize, int* returnSize) {
